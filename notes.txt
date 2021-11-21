@@ -1,0 +1,57 @@
+Python being a slower programming language it is used as a glue language to trigger code in other languages
+NumPy for instance has its underlying functions written in C
+
+The Algorithmic trading process
+
+- Collect data
+- Develop a hypothesis for a strategy
+- Backtest that strategy
+- Implement that strategy in production
+
+Project details:
+
+- We'll be using random data
+- We will not be executing trades
+- We'll be saving recommended trades into excel files
+
+API basics and course configurations:
+
+We will be using the IEX cloud data to gather stock data
+
+API fundamentals:
+
+GET : Lets you get data
+POST: Adds data to the database exposed by the API (Create Only)
+PUT: Adds and overwrites data in the database exposed by the API(create or replace)
+DELETE: Deletes data from the APIs database
+
+List of public APIs:
+https://github.com/public-apis/public-apis
+
+Project 1:
+
+Equal weight S&P 500. The S&P 500 is market capitalization weighted. THis means that larger companies 
+get a correspondingly larger weight. In this project we build an alternative model where each company has the same
+weight.
+
+Project 2:
+
+Quantitative momentum screener
+
+A momentum investing strategy would recommend investing in share that has had higher recent price return
+
+Project 3:
+
+Quantitative value screener
+
+Values investing is investing in stocks that are trading below their perceived intrinsic value
+This strategy depends on a concept called multiples. 
+Multiples are calculated by dividing a companys stock price bu some measure of the companys net worth like 
+
+- price-to-earnings
+- price-to-book-value
+- price-to-free-cash-flow
+
+Each of the individual multiples has its pros and cons
+One way to minimize the impact of any specific multiple is by using a composite
+We'll use a composite of 5 different value metrics
